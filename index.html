@@ -1,0 +1,1117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Maulana Abul Kalam Azad Educational Institute | Bandzoo, Pulwama</title>
+
+<meta name="description"
+content="Official school information website for Maulana Abul Kalam Azad Educational Institute, Bandzoo, Pulwama, Jammu and Kashmir.">
+
+<style>
+/* =========================
+   GENERAL
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f5fbff;
+    color: #183b3b;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+section {
+    padding: 75px 7%;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.section-title h2 {
+    font-size: 36px;
+    color: #087f5b;
+    margin-bottom: 10px;
+}
+
+.section-title p {
+    color: #607d7d;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background: rgba(255,255,255,0.96);
+    box-shadow: 0 2px 15px rgba(0,0,0,0.08);
+}
+
+.navbar {
+    max-width: 1250px;
+    margin: auto;
+    min-height: 75px;
+    padding: 10px 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #087f5b, #42b5e8);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.school-name {
+    font-size: 15px;
+    font-weight: bold;
+    color: #075d49;
+    max-width: 270px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-links a {
+    font-size: 14px;
+    font-weight: 600;
+    color: #245555;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #087f5b;
+}
+
+.menu-btn {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    min-height: 100vh;
+    padding-top: 130px;
+    display: flex;
+    align-items: center;
+    background:
+        linear-gradient(120deg, rgba(5,112,79,0.94), rgba(48,168,220,0.86)),
+        radial-gradient(circle at top right, #dff7ff, transparent 50%);
+    color: white;
+}
+
+.hero-content {
+    max-width: 850px;
+    margin: auto;
+    text-align: center;
+}
+
+.hero-badge {
+    display: inline-block;
+    background: rgba(255,255,255,0.18);
+    border: 1px solid rgba(255,255,255,0.35);
+    padding: 8px 18px;
+    border-radius: 30px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    line-height: 1.15;
+    margin-bottom: 20px;
+}
+
+.hero h1 span {
+    color: #eafff5;
+}
+
+.hero p {
+    font-size: 18px;
+    max-width: 750px;
+    margin: auto auto 30px;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    display: inline-block;
+    padding: 13px 25px;
+    border-radius: 30px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-primary {
+    background: white;
+    color: #087f5b;
+}
+
+.btn-primary:hover {
+    transform: translateY(-3px);
+}
+
+.btn-outline {
+    border: 2px solid white;
+    color: white;
+}
+
+.btn-outline:hover {
+    background: white;
+    color: #087f5b;
+}
+
+/* =========================
+   QUICK INFO
+========================= */
+
+.quick-info {
+    margin-top: -50px;
+    position: relative;
+    z-index: 10;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+}
+
+.info-card {
+    background: white;
+    padding: 25px 15px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.09);
+}
+
+.info-card .icon {
+    font-size: 30px;
+    margin-bottom: 8px;
+}
+
+.info-card h3 {
+    color: #087f5b;
+    font-size: 25px;
+}
+
+.info-card p {
+    font-size: 13px;
+    color: #6c8181;
+}
+
+/* =========================
+   ABOUT
+========================= */
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 45px;
+    align-items: center;
+}
+
+.about-text h3 {
+    font-size: 28px;
+    color: #075d49;
+    margin-bottom: 15px;
+}
+
+.about-text p {
+    margin-bottom: 15px;
+    color: #536b6b;
+}
+
+.about-box {
+    background: linear-gradient(135deg, #e7fff5, #e8f8ff);
+    padding: 30px;
+    border-radius: 20px;
+    border-left: 5px solid #087f5b;
+}
+
+.about-box h3 {
+    color: #087f5b;
+    margin-bottom: 15px;
+}
+
+/* =========================
+   CARDS
+========================= */
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.card {
+    background: white;
+    padding: 28px;
+    border-radius: 18px;
+    box-shadow: 0 7px 25px rgba(0,0,0,0.07);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-7px);
+}
+
+.card-icon {
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    color: #087f5b;
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #607575;
+}
+
+/* =========================
+   ACADEMICS
+========================= */
+
+.academics {
+    background: #eaf8fc;
+}
+
+.subjects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.subject {
+    background: white;
+    border: 1px solid #ccebef;
+    padding: 10px 18px;
+    border-radius: 25px;
+    color: #087f5b;
+    font-weight: bold;
+}
+
+/* =========================
+   TEACHERS
+========================= */
+
+.teacher-card {
+    text-align: center;
+}
+
+.teacher-avatar {
+    width: 90px;
+    height: 90px;
+    margin: auto auto 15px;
+    border-radius: 50%;
+    background: linear-gradient(135deg,#087f5b,#55c3eb);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 32px;
+}
+
+/* =========================
+   ACHIEVEMENTS
+========================= */
+
+.achievement {
+    border-top: 4px solid #087f5b;
+}
+
+/* =========================
+   FACILITIES
+========================= */
+
+.facilities {
+    background: #f0fbf7;
+}
+
+.facility-list {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 18px;
+}
+
+.facility {
+    background: white;
+    padding: 20px;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.facility span {
+    font-size: 30px;
+}
+
+/* =========================
+   GALLERY
+========================= */
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 15px;
+}
+
+.gallery-item {
+    height: 220px;
+    border-radius: 15px;
+    overflow: hidden;
+    background: linear-gradient(135deg,#d7f5e9,#d9f4ff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #087f5b;
+    font-weight: bold;
+    font-size: 17px;
+    transition: 0.3s;
+}
+
+.gallery-item:hover {
+    transform: scale(1.03);
+}
+
+/* =========================
+   ADMISSION
+========================= */
+
+.admission {
+    background: linear-gradient(135deg,#087f5b,#269fd1);
+    color: white;
+}
+
+.admission .section-title h2,
+.admission .section-title p {
+    color: white;
+}
+
+.admission-box {
+    background: rgba(255,255,255,0.13);
+    border: 1px solid rgba(255,255,255,0.25);
+    border-radius: 20px;
+    padding: 30px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.admission-box ol {
+    padding-left: 25px;
+}
+
+.admission-box li {
+    margin: 12px 0;
+}
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+.contact-card {
+    background: white;
+    padding: 28px;
+    border-radius: 18px;
+    box-shadow: 0 7px 25px rgba(0,0,0,0.07);
+}
+
+.contact-item {
+    display: flex;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.contact-icon {
+    font-size: 25px;
+}
+
+.contact-item h4 {
+    color: #087f5b;
+}
+
+.map-box {
+    min-height: 320px;
+    border-radius: 18px;
+    background: linear-gradient(135deg,#d9f7e9,#d9f2ff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background: #073f35;
+    color: white;
+    padding: 45px 7% 20px;
+}
+
+.footer-grid {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 35px;
+}
+
+footer h3 {
+    margin-bottom: 15px;
+}
+
+footer p {
+    color: #c8dddd;
+    font-size: 14px;
+}
+
+.footer-links {
+    list-style: none;
+}
+
+.footer-links li {
+    margin: 8px 0;
+    color: #c8dddd;
+}
+
+.copyright {
+    text-align: center;
+    border-top: 1px solid rgba(255,255,255,0.15);
+    margin-top: 35px;
+    padding-top: 18px;
+    font-size: 13px;
+    color: #b8cccc;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+    .nav-links {
+        position: absolute;
+        top: 75px;
+        left: 0;
+        width: 100%;
+        background: white;
+        display: none;
+        flex-direction: column;
+        padding: 20px;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    .info-grid {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .about-grid,
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .card-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+
+    section {
+        padding: 55px 5%;
+    }
+
+    .hero {
+        padding-top: 110px;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .section-title h2 {
+        font-size: 29px;
+    }
+
+    .info-grid,
+    .card-grid,
+    .facility-list,
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .school-name {
+        font-size: 12px;
+        max-width: 190px;
+    }
+
+    .logo {
+        width: 45px;
+        height: 45px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- =========================
+     HEADER
+========================= -->
+
+<header>
+
+<nav class="navbar">
+
+    <div class="logo-area">
+        <div class="logo">MAA</div>
+
+        <div class="school-name">
+            Maulana Abul Kalam Azad Educational Institute
+        </div>
+    </div>
+
+    <div class="menu-btn" onclick="toggleMenu()">☰</div>
+
+    <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#academics">Academics</a></li>
+        <li><a href="#teachers">Staff</a></li>
+        <li><a href="#achievements">Achievements</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#facilities">Facilities</a></li>
+        <li><a href="#admission">Admission</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+
+</nav>
+
+</header>
+
+
+<!-- =========================
+     HOME
+========================= -->
+
+<section class="hero" id="home">
+
+<div class="hero-content">
+
+    <div class="hero-badge">
+        🎓 Welcome to Our School
+    </div>
+
+    <h1>
+        Maulana Abul Kalam Azad
+        <span>Educational Institute</span>
+    </h1>
+
+    <p>
+        Bandzoo, Pulwama, Jammu & Kashmir
+    </p>
+
+    <p>
+        Nurturing young minds through education, values,
+        discipline and knowledge.
+    </p>
+
+    <div class="hero-buttons">
+        <a href="#about" class="btn btn-primary">
+            Explore School
+        </a>
+
+        <a href="#admission" class="btn btn-outline">
+            Admission Information
+        </a>
+    </div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     QUICK INFORMATION
+========================= -->
+
+<div class="quick-info">
+
+<div class="container">
+
+<div class="info-grid">
+
+    <div class="info-card">
+        <div class="icon">📅</div>
+        <h3>2006</h3>
+        <p>Established</p>
+    </div>
+
+    <div class="info-card">
+        <div class="icon">📚</div>
+        <h3>1–7</h3>
+        <p>Grades</p>
+    </div>
+
+    <div class="info-card">
+        <div class="icon">💻</div>
+        <h3>4</h3>
+        <p>Functional Computers</p>
+    </div>
+
+    <div class="info-card">
+        <div class="icon">📖</div>
+        <h3>155</h3>
+        <p>Library Books</p>
+    </div>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- =========================
+     ABOUT
+========================= -->
+
+<section id="about">
+
+<div class="container">
+
+<div class="section-title">
+    <h2>About Us</h2>
+    <p>Learn more about our institution</p>
+</div>
+
+<div class="about-grid">
+
+<div class="about-text">
+
+    <h3>Our School</h3>
+
+    <p>
+        Maulana Abul Kalam Azad Educational Institute was
+        established in 2006. The school is located in the
+        rural area of Bandzoo, Pulwama, Jammu and Kashmir.
+    </p>
+
+    <p>
+        The school is a co-educational institution offering
+        education from Grades 1 to 7, with an attached
+        pre-primary section.
+    </p>
+
+    <p>
+        English is the medium of instruction and the academic
+        session begins in April.
+    </p>
+
+    <p>
+        The school is approachable by an all-weather road and
+        operates from a rented school building.
+    </p>
+
+</div>
+
+<div class="about-box">
+
+    <h3>🎯 Our Mission</h3>
+
+    <p>
+        To provide quality education in a supportive and
+        disciplined environment while helping students
+        develop knowledge, confidence, creativity and
+        good values.
+    </p>
+
+    <br>
+
+    <h3>🌱 Our Vision</h3>
+
+    <p>
+        To encourage every student to learn, grow and become
+        a responsible and capable member of society.
+    </p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     ACADEMICS
+========================= -->
+
+<section class="academics" id="academics">
+
+<div class="container">
+
+<div class="section-title">
+    <h2>Academics</h2>
+    <p>Building a strong foundation for lifelong learning</p>
+</div>
+
+<div class="card-grid">
+
+    <div class="card">
+        <div class="card-icon">📘</div>
+        <h3>Primary Education</h3>
+        <p>
+            Classes from Grade 1 onwards focus on developing
+            strong foundations in language, mathematics,
+            science and general knowledge.
+        </p>
+    </div>
+
+    <div class="card">
+        <div class="card-icon">🧠</div>
+        <h3>Learning & Development</h3>
+        <p>
+            Students are encouraged to develop creativity,
+            communication skills, critical thinking and
+            responsible behaviour.
+        </p>
+    </div>
+
+    <div class="card">
+        <div class="card-icon">💻</div>
+        <h3>Digital Learning</h3>
+        <p>
+            The school has 4 functional computers used for
+            teaching and learning purposes.
+        </p>
+    </div>
+
+</div>
+
+<h3 style="margin-top:40px;color:#087f5b;">
+    Subjects & Learning Areas
+</h3>
+
+<div class="subjects">
+
+    <div class="subject">English</div>
+    <div class="subject">Mathematics</div>
+    <div class="subject">Science</div>
+    <div class="subject">Social Studies</div>
+    <div class="subject">Languages</div>
+    <div class="subject">General Knowledge</div>
+    <div class="subject">Computer Education</div>
+    <div class="subject">Physical Activities</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     TEACHERS & STAFF
+========================= -->
+
+<section id="teachers">
+
+<div class="container">
+
+<div class="section-title">
+    <h2>Teachers & Staff</h2>
+    <p>Our educators help students learn and grow</p>
+</div>
+
+<div class="card-grid">
+
+    <div class="card teacher-card">
+        <div class="teacher-avatar">👨‍🏫</div>
+        <h3>Head Teacher</h3>
+        <p>
+            School Administration
+        </p>
+    </div>
+
+    <div class="card teacher-card">
+        <div class="teacher-avatar">👩‍🏫</div>
+        <h3>Teaching Staff</h3>
+        <p>
+            Academic Department
+        </p>
+    </div>
+
+    <div class="card teacher-card">
+        <div class="teacher-avatar">👨‍💼</div>
+        <h3>Support Staff</h3>
+        <p>
+            School Support Services
+        </p>
+    </div>
+
+</div>
+
+<p style="text-align:center;margin-top:25px;color:#607575;">
+    Teacher names can be added here when the official staff
+    list is available.
+</p>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     ACHIEVEMENTS
+========================= -->
+
+<section id="achievements" class="academics">
+
+<div class="container">
+
+<div class="section-title">
+    <h2>Achievements</h2>
+    <p>Celebrating learning, participation and progress</p>
+</div>
+
+<div class="card-grid">
+
+    <div class="card achievement">
+        <div class="card-icon">🏆</div>
+        <h3>Academic Excellence</h3>
+        <p>
+            Encouraging students to perform well in their
+            studies and develop strong learning habits.
+        </p>
+    </div>
+
+    <div class="card achievement">
+        <div class="card-icon">🏏</div>
+        <h3>Sports & Activities</h3>
+        <p>
+            Students are encouraged to participate in
+            physical activities and sports.
+        </p>
+    </div>
+
+    <div class="card achievement">
+        <div class="card-icon">🌟</div>
+        <h3>Student Development</h3>
+        <p>
+            The school promotes confidence, discipline,
+            creativity and responsible behaviour.
+        </p>
+    </div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     GALLERY
+========================= -->
+
+<section id="gallery">
+
+<div class="container">
+
+<div class="section-title">
+    <h2>Gallery</h2>
+    <p>School life, events and activities</p>
+</div>
+
+<div class="gallery">
+
+    <div class="gallery-item">
+        🏫 School Building
+    </div>
+
+    <div class="gallery-item">
+        📚 Classroom
+    </div>
+
+    <div class="gallery-item">
+        👨‍🎓 Students
+    </div>
+
+    <div class="gallery-item">
+        🎉 School Event
+    </div>
+
+    <div class="gallery-item">
+        📖 Library
+    </div>
+
+    <div class="gallery-item">
+        🏅 Activities
+    </div>
+
+</div>
+
+<p style="text-align:center;margin-top:25px;color:#607575;">
+    Replace these placeholders with actual school photographs.
+</p>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     FACILITIES
+========================= -->
+
+<section class="facilities" id="facilities">
+
+<div class="container">
+
+<div class="section-title">
+    <h2>Facilities</h2>
+    <p>Facilities available for students and staff</p>
+</div>
+
+<div class="facility-list">
+
+    <div class="facility">
+        <span>🏫</span>
+        <div>
+            <h3>8 Classrooms</h3>
+            <p>All classrooms are reported to be in good condition.</p>
+        </div>
+    </div>
+
+    <div class="facility">
+        <span>📖</span>
+        <div>
+            <h3>Library</h3>
+            <p>School library with 155 books.</p>
+        </div>
+    </div>
+
+    <div class="facility">
+        <span>💻</span>
+        <div>
+            <h3>Computer Facilities</h3>
+            <p>4 functional computers for teaching and learning.</p>
+        </div>
+    </div>
+
+    <div class="facility">
+        <span>🚰</span>
+        <div>
+            <h3>Drinking Water</h3>
+            <p>Functional tap-water facility.</p>
+        </div>
+    </div>
+
+    <div class="facility">
+        <span>🚻</span>
+        <div>
+            <h3>Toilets</h3>
+            <p>Separate functional boys' and girls' toilets.</p>
+        </div>
+    </div>
+
+    <div class="facility">
+        <span>⚡</span>
+        <div>
+            <h3>Electricity</h3>
+            <p>The school has an electric connection.</p>
+        </div>
+    </div>
+
+    <div class="facility">
+        <span>👨‍🏫</span>
+        <div>
+            <h3>Head Teacher Room</h3>
+            <p>Separate room for the Head Master/Teacher.</p>
+        </div>
+    </div>
+
+    <div class="facility">
+        <span>🚗
