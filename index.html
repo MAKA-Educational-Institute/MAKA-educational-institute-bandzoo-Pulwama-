@@ -86,12 +86,22 @@ header {
     gap: 12px;
 }
 
-.logo {
-    width: 52px;
-    height: 52px;
+.school-logo-vector {
+    width: 55px;
+    height: 55px;
     border-radius: 50%;
-    object-fit: cover;
-    border: 2px solid #087f5b;
+    background: radial-gradient(circle at center, #ffffff 42%, #08694d 43%, #08694d 56%, transparent 57%),
+                conic-gradient(#ebaa1c 0deg 90deg, #e33826 90deg 180deg, #00c3eb 180deg 270deg, #1b4fb3 270deg 360deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+.school-logo-vector svg {
+    width: 24px;
+    height: 24px;
+    fill: #08694d;
 }
 
 .school-name {
@@ -619,27 +629,22 @@ footer p {
         font-size: 12px;
         max-width: 190px;
     }
-
-    .logo {
-        width: 45px;
-        height: 45px;
-    }
 }
 </style>
 </head>
 
 <body>
 
-<!-- =========================
-     HEADER
-========================= -->
-
 <header>
 
 <nav class="navbar">
 
     <div class="logo-area">
-        <img src="1000211820.jpg" alt="Maulana Abul Kalam Azad Educational Institute Logo" class="logo">
+        <div class="school-logo-vector">
+            <svg viewBox="0 0 24 24">
+                <path d="M21 5c-1.11-.35-2.33-.5-3.5-.5-1.95 0-4.05.4-5.5 1.5-1.45-1.1-3.55-1.5-5.5-1.5-1.17 0-2.39.15-3.5.5V19c1.11-.35 2.33-.5 3.5-.5 1.95 0 4.05.4 5.5 1.5 1.45-1.1 3.55-1.5 5.5-1.5 1.17 0 2.39.15 3.5.5V5zm-2 12c-.83-.17-1.74-.25-2.5-.25-1.74 0-3.41.46-4.5 1.25V7.65c1.09-.79 2.76-1.25 4.5-1.25.76 0 1.67.08 2.5.25v10.35z"/>
+            </svg>
+        </div>
 
         <div class="school-name">
             Maulana Abul Kalam Azad Educational Institute
@@ -664,10 +669,6 @@ footer p {
 
 </header>
 
-
-<!-- =========================
-     HOME
-========================= -->
 
 <section class="hero" id="home">
 
@@ -706,10 +707,6 @@ footer p {
 </section>
 
 
-<!-- =========================
-     QUICK INFORMATION
-========================= -->
-
 <div class="quick-info">
 
 <div class="container">
@@ -746,10 +743,6 @@ footer p {
 
 </div>
 
-
-<!-- =========================
-     ABOUT
-========================= -->
 
 <section id="about">
 
@@ -819,10 +812,6 @@ footer p {
 </section>
 
 
-<!-- =========================
-     ACADEMICS
-========================= -->
-
 <section class="academics" id="academics">
 
 <div class="container">
@@ -887,10 +876,6 @@ footer p {
 </section>
 
 
-<!-- =========================
-     TEACHERS & STAFF
-========================= -->
-
 <section id="teachers">
 
 <div class="container">
@@ -906,7 +891,7 @@ footer p {
         <div class="teacher-avatar">👨‍🏫</div>
         <h3>Riyaz Ahmad Mir</h3>
         <p>
-            Head Master / School Administration
+            Principal
         </p>
     </div>
 
@@ -932,10 +917,6 @@ footer p {
 
 </section>
 
-
-<!-- =========================
-     ACHIEVEMENTS
-========================= -->
 
 <section id="achievements" class="academics">
 
@@ -982,10 +963,6 @@ footer p {
 </section>
 
 
-<!-- =========================
-     GALLERY
-========================= -->
-
 <section id="gallery">
 
 <div class="container">
@@ -1031,10 +1008,6 @@ footer p {
 
 </section>
 
-
-<!-- =========================
-     FACILITIES
-========================= -->
 
 <section class="facilities" id="facilities">
 
@@ -1098,8 +1071,8 @@ footer p {
     <div class="facility">
         <span>👨‍🏫</span>
         <div>
-            <h3>Head Teacher Room</h3>
-            <p>Separate room for the Head Master (Riyaz Ahmad Mir).</p>
+            <h3>Principal's Office</h3>
+            <p>Dedicated office space for Principal Riyaz Ahmad Mir.</p>
         </div>
     </div>
 
@@ -1107,4 +1080,6 @@ footer p {
         <span>🚗</span>
         <div>
             <h3>Transport & Connectivity</h3>
-            <p>Approachable by a
+            <p>Approachable by an all-weather road.</p>
+        </div>
+    </d
