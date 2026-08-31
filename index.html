@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+                                
+                    <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -6,695 +7,381 @@
 
 <title>Maulana Abul Kalam Azad Educational Institute | Bandzoo, Pulwama</title>
 
-<meta name="description" content="Maulana Abul Kalam Azad Educational Institute, Bandzoo, Pulwama, Jammu and Kashmir, India.">
+<meta name="description" content="Official school information website for Maulana Abul Kalam Azad Educational Institute, Bandzoo, Pulwama, Jammu and Kashmir.">
+<meta name="google-site-verification" content="8kEH2-_6SUyJ-p49ff-6d7sz82wEES78PdzuoeLKLbI" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
 <style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+/* =========================
+   DESIGN SYSTEM & VARIABLES
+========================= */
+:root {
+    --primary: #07644d;
+    --primary-dark: #044334;
+    --primary-light: #10a37f;
+    --accent-yellow: #facc15;
+    --accent-red: #dc2626;
+    --accent-blue: #0284c7;
+    --bg-light: #f8fafc;
+    --surface: #ffffff;
+    --text-main: #1e293b;
+    --text-muted: #64748b;
+    --border-color: #e2e8f0;
+    --shadow-sm: 0 2px 8px rgba(0,0,0,0.04);
+    --shadow-md: 0 10px 30px rgba(0,0,0,0.08);
+    --shadow-lg: 0 20px 40px rgba(0,0,0,0.12);
+    --radius-sm: 8px;
+    --radius-md: 16px;
+    --radius-lg: 24px;
+}
+
+/* =========================
+   GENERAL STYLES
+========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background: var(--bg-light);
+    color: var(--text-main);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+section {
+    padding: 90px 7%;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+.section-title h2 {
+    font-size: 38px;
+    font-weight: 800;
+    color: var(--primary);
+    margin-bottom: 12px;
+    letter-spacing: -0.5px;
+}
+
+.section-title p {
+    color: var(--text-muted);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* =========================
+   HEADER & NAVBAR
+========================= */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background: rgba(255, 255, 255, 0.92);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+    box-shadow: var(--shadow-sm);
+}
+
+.navbar {
+    max-width: 1280px;
+    margin: auto;
+    min-height: 80px;
+    padding: 10px 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 14px;
 }
 
-html{
-    scroll-behavior:smooth;
+.school-logo-svg {
+    width: 65px;
+    height: 65px;
+    filter: drop-shadow(0 4px 6px rgba(0,0,0,0.1));
+    transition: transform 0.3s ease;
 }
 
-body{
-    font-family:Arial,Helvetica,sans-serif;
-    background:#f5f8f7;
-    color:#17221f;
-    line-height:1.6;
+.logo-area:hover .school-logo-svg {
+    transform: scale(1.05);
+}
+
+.school-name {
+    font-size: 15px;
+    font-weight: 800;
+    color: var(--primary-dark);
+    max-width: 250px;
+    line-height: 1.25;
+    text-transform: uppercase;
+    letter-spacing: -0.2px;
 }
 
-a{
-    text-decoration:none;
-    color:inherit;
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 22px;
+}
+
+.nav-links a {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-main);
+    transition: all 0.2s ease;
+    padding: 6px 10px;
+    border-radius: var(--radius-sm);
+}
+
+.nav-links a:hover {
+    color: var(--primary);
+    background: rgba(7, 100, 77, 0.06);
 }
-
-.container{
-    width:92%;
-    max-width:1150px;
-    margin:auto;
-}
-
-/* HEADER */
-
-header{
-    position:fixed;
-    top:0;
-    left:0;
-    width:100%;
-    background:white;
-    box-shadow:0 3px 15px rgba(0,0,0,.08);
-    z-index:1000;
-}
-
-.navbar{
-    min-height:75px;
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-}
-
-.logo{
-    display:flex;
-    align-items:center;
-    gap:12px;
-}
-
-.logo-icon{
-    width:48px;
-    height:48px;
-    border-radius:50%;
-    background:#087653;
-    color:white;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    font-size:25px;
-}
-
-.logo-text{
-    font-size:14px;
-    font-weight:bold;
-    color:#075c49;
-    max-width:240px;
-    line-height:1.25;
-}
-
-nav ul{
-    list-style:none;
-    display:flex;
-    gap:5px;
-}
-
-nav a{
-    padding:10px 13px;
-    border-radius:8px;
-    font-size:14px;
-    font-weight:bold;
-}
-
-nav a:hover{
-    background:#e4f5ef;
-    color:#075c49;
-}
-
-.menu{
-    display:none;
-    border:0;
-    background:none;
-    font-size:30px;
-    color:#075c49;
-    cursor:pointer;
-}
-
-/* HERO */
-
-.hero{
-    min-height:100vh;
-    padding:150px 20px 100px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    text-align:center;
-    color:white;
-    background:
-    radial-gradient(circle at 20% 20%,rgba(255,255,255,.13),transparent 25%),
-    radial-gradient(circle at 80% 80%,rgba(14,165,233,.25),transparent 30%),
-    linear-gradient(135deg,#043d31,#087653,#075985);
-}
-
-.hero-content{
-    max-width:850px;
-}
-
-.badge{
-    display:inline-block;
-    padding:8px 17px;
-    border:1px solid rgba(255,255,255,.3);
-    border-radius:30px;
-    background:rgba(255,255,255,.1);
-    font-size:13px;
-    font-weight:bold;
-    margin-bottom:22px;
-}
-
-.hero h1{
-    font-size:clamp(38px,6vw,65px);
-    line-height:1.08;
-    margin-bottom:20px;
-}
-
-.hero h1 span{
-    color:#facc15;
-}
-
-.hero p{
-    color:#dff7ef;
-    max-width:700px;
-    margin:0 auto 30px;
-    font-size:17px;
-}
-
-.location{
-    font-size:18px;
-    font-weight:bold;
-    margin-bottom:12px;
-}
-
-.buttons{
-    display:flex;
-    justify-content:center;
-    gap:12px;
-    flex-wrap:wrap;
-}
-
-.btn{
-    display:inline-block;
-    padding:13px 24px;
-    border-radius:30px;
-    font-weight:bold;
-    font-size:14px;
-    transition:.3s;
-}
-
-.primary{
-    background:#facc15;
-    color:#17221f;
-}
-
-.primary:hover{
-    transform:translateY(-3px);
-}
-
-.secondary{
-    border:1px solid white;
-    color:white;
-}
-
-.secondary:hover{
-    background:white;
-    color:#075c49;
-}
-
-/* STATS */
-
-.stats{
-    margin-top:-55px;
-    position:relative;
-    z-index:5;
-}
-
-.stats-grid{
-    display:grid;
-    grid-template-columns:repeat(4,1fr);
-    gap:16px;
-}
-
-.stat{
-    background:white;
-    padding:25px 15px;
-    text-align:center;
-    border-radius:16px;
-    box-shadow:0 12px 35px rgba(0,0,0,.1);
-}
-
-.stat-icon{
-    font-size:28px;
-}
-
-.stat h3{
-    color:#087653;
-    font-size:25px;
-}
-
-.stat p{
-    color:#64748b;
-    font-size:12px;
-    font-weight:bold;
-}
-
-/* GENERAL */
-
-section{
-    padding:90px 0;
-}
-
-.section-title{
-    text-align:center;
-    max-width:700px;
-    margin:0 auto 50px;
-}
-
-.section-title small{
-    color:#087653;
-    font-weight:bold;
-    text-transform:uppercase;
-    letter-spacing:2px;
-}
-
-.section-title h2{
-    font-size:40px;
-    color:#043d31;
-    margin:8px 0;
+
+.menu-btn {
+    display: none;
+    font-size: 26px;
+    cursor: pointer;
+    color: var(--primary);
 }
 
-.section-title p{
-    color:#64748b;
+/* =========================
+   HERO SECTION
+========================= */
+.hero {
+    min-height: 100vh;
+    padding-top: 140px;
+    display: flex;
+    align-items: center;
+    background: 
+        radial-gradient(circle at top right, rgba(56, 189, 248, 0.25), transparent 40%),
+        radial-gradient(circle at bottom left, rgba(16, 163, 127, 0.2), transparent 40%),
+        linear-gradient(135deg, #044334 0%, #07644d 60%, #0284c7 100%);
+    color: white;
+    position: relative;
 }
 
-/* ABOUT */
-
-.about{
-    background:white;
-}
-
-.about-grid{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:55px;
-    align-items:center;
-}
-
-.about-image{
-    min-height:390px;
-    border-radius:25px;
-    background:linear-gradient(135deg,#087653,#075985);
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    color:white;
-    text-align:center;
-    box-shadow:0 20px 50px rgba(0,0,0,.15);
-}
-
-.school-symbol{
-    font-size:90px;
-}
-
-.about-content h2{
-    font-size:38px;
-    color:#043d31;
-    margin:10px 0 18px;
-}
-
-.about-content p{
-    color:#64748b;
-    margin-bottom:15px;
-}
-
-.points{
-    margin-top:22px;
-    display:grid;
-    gap:12px;
-}
-
-.point{
-    display:flex;
-    gap:10px;
-    align-items:center;
-    font-weight:bold;
-}
-
-.check{
-    width:27px;
-    height:27px;
-    border-radius:50%;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    background:#dcfce7;
-    color:#15803d;
-}
-
-/* CARDS */
-
-.cards{
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:20px;
-}
-
-.card{
-    background:white;
-    padding:30px;
-    border-radius:18px;
-    border:1px solid #e2e8f0;
-    box-shadow:0 5px 18px rgba(0,0,0,.05);
-    transition:.3s;
-}
-
-.card:hover{
-    transform:translateY(-7px);
-    box-shadow:0 15px 35px rgba(0,0,0,.1);
-}
-
-.card-icon{
-    width:55px;
-    height:55px;
-    border-radius:14px;
-    background:#e6f5ef;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    font-size:27px;
-    margin-bottom:18px;
-}
-
-.card h3{
-    color:#043d31;
-    margin-bottom:8px;
-}
-
-.card p{
-    color:#64748b;
-    font-size:14px;
-}
-
-/* WHY */
-
-.why{
-    background:white;
-}
-
-.why-grid{
-    display:grid;
-    grid-template-columns:repeat(4,1fr);
-    gap:18px;
-}
-
-.why-card{
-    text-align:center;
-    padding:28px 18px;
-    background:#f7faf9;
-    border-radius:18px;
-    border:1px solid #e2e8f0;
-}
-
-.why-card .big-icon{
-    font-size:38px;
-    margin-bottom:10px;
-}
-
-.why-card h3{
-    color:#043d31;
-    font-size:17px;
-}
-
-.why-card p{
-    color:#64748b;
-    font-size:13px;
-    margin-top:5px;
-}
-
-/* FACILITIES */
-
-.facilities{
-    color:white;
-    background:linear-gradient(135deg,#043d31,#087653);
-}
-
-.facilities .section-title h2,
-.facilities .section-title p,
-.facilities .section-title small{
-    color:white;
-}
-
-.facility-grid{
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:18px;
-}
-
-.facility{
-    padding:28px;
-    border-radius:18px;
-    background:rgba(255,255,255,.1);
-    border:1px solid rgba(255,255,255,.15);
-}
-
-.facility-icon{
-    font-size:34px;
-    margin-bottom:10px;
-}
-
-.facility h3{
-    margin-bottom:5px;
-}
-
-.facility p{
-    color:#d8f4e9;
-    font-size:13px;
-}
-
-/* LOCATION */
-
-.contact{
-    background:white;
-}
-
-.contact-grid{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:25px;
-}
-
-.contact-box{
-    background:#f7faf9;
-    border:1px solid #e2e8f0;
-    padding:30px;
-    border-radius:18px;
+.hero-content {
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
 }
 
-.contact-item{
-    display:flex;
-    gap:15px;
-    margin-bottom:25px;
+.hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    padding: 8px 20px;
+    border-radius: 50px;
+    margin-bottom: 24px;
+    font-size: 14px;
+    font-weight: 500;
 }
 
-.contact-item:last-child{
-    margin-bottom:0;
+.hero h1 {
+    font-size: 54px;
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 20px;
+    letter-spacing: -1px;
 }
 
-.contact-icon{
-    width:45px;
-    height:45px;
-    flex-shrink:0;
-    border-radius:12px;
-    background:#e5f5ef;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    font-size:21px;
+.hero h1 span {
+    color: var(--accent-yellow);
 }
 
-.contact-item h3{
-    color:#043d31;
-    font-size:16px;
+.hero-location {
+    font-size: 20px;
+    font-weight: 600;
+    opacity: 0.95;
+    margin-bottom: 12px;
+    color: #e2e8f0;
 }
 
-.contact-item p{
-    color:#64748b;
-    font-size:14px;
+.hero p.tagline {
+    font-size: 18px;
+    max-width: 700px;
+    margin: 0 auto 36px;
+    opacity: 0.85;
+    font-weight: 300;
 }
 
-.map{
-    min-height:320px;
-    border-radius:18px;
-    background:
-    radial-gradient(circle,rgba(2,132,199,.2),transparent 40%),
-    linear-gradient(135deg,#e0f2fe,#dcfce7);
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
 }
 
-.map-icon{
-    font-size:60px;
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 32px;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: var(--shadow-sm);
 }
 
-.map h3{
-    color:#043d31;
-    margin-top:8px;
+.btn-primary {
+    background: var(--accent-yellow);
+    color: #1e293b;
 }
 
-.map p{
-    color:#64748b;
+.btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(250, 204, 21, 0.3);
 }
-
-/* FOOTER */
 
-footer{
-    background:#032b23;
-    color:white;
-    padding:55px 0 20px;
+.btn-outline {
+    border: 2px solid rgba(255, 255, 255, 0.8);
+    color: white;
+    background: transparent;
 }
 
-.footer-grid{
-    display:grid;
-    grid-template-columns:1.5fr 1fr 1fr;
-    gap:40px;
-    padding-bottom:35px;
+.btn-outline:hover {
+    background: white;
+    color: var(--primary);
+    transform: translateY(-3px);
 }
 
-footer h2{
-    font-size:22px;
-    margin-bottom:10px;
+/* =========================
+   QUICK INFO CARDS
+========================= */
+.quick-info {
+    margin-top: -60px;
+    position: relative;
+    z-index: 10;
 }
 
-footer h3{
-    font-size:15px;
-    margin-bottom:12px;
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
 }
 
-footer p,
-footer a{
-    color:#b7d8d0;
-    font-size:13px;
+.info-card {
+    background: var(--surface);
+    padding: 30px 20px;
+    text-align: center;
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-md);
+    border: 1px solid rgba(0,0,0,0.03);
+    transition: transform 0.3s ease;
 }
 
-.footer-links{
-    list-style:none;
-    display:grid;
-    gap:8px;
+.info-card:hover {
+    transform: translateY(-5px);
 }
 
-.footer-links a:hover{
-    color:white;
+.info-card .icon {
+    font-size: 32px;
+    margin-bottom: 12px;
 }
 
-.bottom{
-    border-top:1px solid rgba(255,255,255,.12);
-    padding-top:20px;
-    text-align:center;
-    color:#91b9b0;
-    font-size:12px;
+.info-card h3 {
+    color: var(--primary);
+    font-size: 32px;
+    font-weight: 800;
+    margin-bottom: 4px;
 }
 
-/* TOP BUTTON */
-
-#top{
-    position:fixed;
-    right:18px;
-    bottom:18px;
-    width:45px;
-    height:45px;
-    border:0;
-    border-radius:50%;
-    background:#087653;
-    color:white;
-    font-size:20px;
-    cursor:pointer;
-    display:none;
-    z-index:900;
+.info-card p {
+    font-size: 14px;
+    color: var(--text-muted);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
 }
-
-/* MOBILE */
-
-@media(max-width:850px){
 
-    .menu{
-        display:block;
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+@media (max-width: 900px) {
+    .nav-links {
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background: var(--surface);
+        display: none;
+        flex-direction: column;
+        padding: 24px;
+        box-shadow: var(--shadow-md);
+        border-bottom: 1px solid var(--border-color);
     }
 
-    nav ul{
-        display:none;
-        position:absolute;
-        top:75px;
-        left:0;
-        width:100%;
-        background:white;
-        flex-direction:column;
-        padding:15px;
-        box-shadow:0 10px 20px rgba(0,0,0,.1);
+    .nav-links.active {
+        display: flex;
     }
 
-    nav ul.open{
-        display:flex;
+    .menu-btn {
+        display: block;
     }
 
-    nav a{
-        display:block;
-        padding:13px;
-    }
-
-    .stats-grid{
-        grid-template-columns:repeat(2,1fr);
-    }
-
-    .about-grid,
-    .contact-grid{
-        grid-template-columns:1fr;
-    }
-
-    .cards{
-        grid-template-columns:repeat(2,1fr);
-    }
-
-    .why-grid{
-        grid-template-columns:repeat(2,1fr);
-    }
-
-    .facility-grid{
-        grid-template-columns:repeat(2,1fr);
-    }
-
-    .footer-grid{
-        grid-template-columns:1fr 1fr;
+    .info-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
-@media(max-width:550px){
-
-    section{
-        padding:70px 0;
+@media (max-width: 600px) {
+    section {
+        padding: 60px 5%;
     }
 
-    .logo-text{
-        font-size:11px;
-        max-width:180px;
+    .hero {
+        padding-top: 120px;
     }
 
-    .logo-icon{
-        width:42px;
-        height:42px;
+    .hero h1 {
+        font-size: 36px;
     }
 
-    .hero{
-        padding-top:125px;
+    .hero p.tagline {
+        font-size: 16px;
     }
 
-    .hero p{
-        font-size:14px;
+    .section-title h2 {
+        font-size: 30px;
     }
 
-    .location{
-        font-size:15px;
+    .info-grid {
+        grid-template-columns: 1fr;
     }
 
-    .stats-grid,
-    .cards,
-    .why-grid,
-    .facility-grid{
-        grid-template-columns:1fr;
-    }
-
-    .section-title h2{
-        font-size:31px;
-    }
-
-    .about-content h2{
-        font-size:31px;
-    }
-
-    .about-image{
-        min-height:300px;
-    }
-
-    .footer-grid{
-        grid-template-columns:1fr;
+    .school-name {
+        font-size: 13px;
+        max-width: 180px;
     }
 }
 </style>
@@ -703,393 +390,149 @@ footer a{
 <body>
 
 <header>
-    <div class="navbar container">
+    <nav class="navbar">
+        <div class="logo-area">
+            <!-- UPDATED EXACT SVG LOGO MATCHING IMAGE -->
+            <svg class="school-logo-svg" viewBox="0 0 400 450" xmlns="http://www.w3.org/2000/svg">
+                <!-- Outer Yellow Background Card -->
+                <rect x="0" y="0" width="400" height="450" rx="40" fill="#facc15" />
+                
+                <!-- Circular Double Red Border -->
+                <circle cx="200" cy="200" r="145" fill="none" stroke="#dc2626" stroke-width="6"/>
+                <circle cx="200" cy="200" r="137" fill="none" stroke="#dc2626" stroke-width="2"/>
+                
+                <!-- Curved Header Text -->
+                <path id="arcText" d="M 40,200 A 160,160 0 1,1 360,200" fill="none"/>
+                <text font-family="'Inter', sans-serif" font-weight="900" font-size="25" fill="#111827" letter-spacing="1">
+                    <textPath href="#arcText" startOffset="50%" text-anchor="middle">
+                        MAULANA ABUL KALAM AZAD EDU. INST.
+                    </textPath>
+                </text>
+                
+                <!-- Inner Blue Shield -->
+                <path d="M 140 145 C 140 145, 200 135, 260 145 C 260 145, 275 240, 200 270 C 125 240, 140 145, 140 145 Z" fill="#7dd3fc"/>
+                
+                <!-- Graduation Cap (Mortarboard) -->
+                <polygon points="200,115 255,135 200,150 145,135" fill="#1e293b"/>
+                <path d="M 165,142 L 165,158 L 235,158 L 235,142 Z" fill="#1e293b"/>
+                <path d="M 152 137 L 150 170" stroke="#1e293b" stroke-width="2.5"/>
+                <circle cx="150" cy="172" r="3" fill="#1e293b"/>
+                
+                <!-- Abstract Human Figures Inside Shield -->
+                <g fill="#111827">
+                    <!-- Left Figure -->
+                    <circle cx="170" cy="168" r="9"/>
+                    <path d="M 152 230 C 152 190, 185 180, 185 230 Z"/>
+                    <!-- Right Figure -->
+                    <circle cx="230" cy="168" r="9"/>
+                    <path d="M 215 230 C 215 180, 248 190, 248 230 Z"/>
+                </g>
+                
+                <!-- Sunburst Rays behind MAKA Text -->
+                <g stroke="#64748b" stroke-width="4" stroke-linecap="round">
+                    <line x1="120" y1="240" x2="160" y2="255" />
+                    <line x1="110" y1="258" x2="155" y2="268" />
+                    <line x1="105" y1="275" x2="150" y2="280" stroke-width="5"/>
+                    <line x1="280" y1="240" x2="240" y2="255" />
+                    <line x1="290" y1="258" x2="245" y2="268" />
+                    <line x1="295" y1="275" x2="250" y2="280" stroke-width="5"/>
+                </g>
 
-        <a href="#home" class="logo">
-            <div class="logo-icon">🏫</div>
-            <div class="logo-text">
-                MAULANA ABUL KALAM AZAD<br>
-                EDUCATIONAL INSTITUTE
+                <!-- MAKA Text -->
+                <text x="200" y="312" font-family="'Inter', sans-serif" font-weight="900" font-size="44" fill="#52606d" text-anchor="middle" letter-spacing="4">MAKA</text>
+                
+                <!-- Vertical Bar Lines Below MAKA -->
+                <g fill="#52606d">
+                    <rect x="170" y="322" width="4" height="20" rx="2"/>
+                    <rect x="180" y="322" width="4" height="28" rx="2"/>
+                    <rect x="190" y="322" width="4" height="20" rx="2"/>
+                    <rect x="200" y="322" width="4" height="34" rx="2"/>
+                    <rect x="210" y="322" width="4" height="20" rx="2"/>
+                    <rect x="220" y="322" width="4" height="28" rx="2"/>
+                    <rect x="230" y="322" width="4" height="20" rx="2"/>
+                </g>
+
+                <!-- Bottom Text BANDZOO PUL -->
+                <text x="200" y="420" font-family="'Inter', sans-serif" font-weight="900" font-size="36" fill="#111827" text-anchor="middle" letter-spacing="1">
+                    BANDZOO PUL
+                </text>
+            </svg>
+            
+            <div class="school-name">
+                Maulana Abul Kalam Azad Educational Institute
             </div>
-        </a>
+        </div>
 
-        <button class="menu" id="menuBtn">☰</button>
+        <div class="menu-btn" onclick="toggleMenu()">☰</div>
 
-        <nav>
-            <ul id="navMenu">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#academics">Academics</a></li>
-                <li><a href="#facilities">Facilities</a></li>
-                <li><a href="#location">Location</a></li>
-            </ul>
-        </nav>
-
-    </div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#academics">Academics</a></li>
+            <li><a href="#teachers">Staff</a></li>
+            <li><a href="#achievements">Achievements</a></li>
+            <li><a href="#facilities">Facilities</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#admission">Admission</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 </header>
 
-
-<!-- HERO -->
-
 <section class="hero" id="home">
-
     <div class="hero-content">
-
-        <div class="badge">
-            🎓 Welcome to Our School
+        <div class="hero-badge">
+            <span>🎓</span> Welcome to Our Campus
         </div>
-
         <h1>
-            Maulana Abul Kalam Azad
+            Maulana Abul Kalam Azad<br>
             <span>Educational Institute</span>
         </h1>
-
-        <div class="location">
-            📍 Bandzoo, Pulwama, Jammu and Kashmir, India
-        </div>
-
-        <p>
-            A place dedicated to learning, knowledge, character,
-            creativity and the bright future of our students.
+        <div class="hero-location">Bandzoo, Pulwama, Jammu & Kashmir</div>
+        <p class="tagline">
+            Nurturing young minds through holistic education, foundational values, discipline, and modern knowledge.
         </p>
-
-        <div class="buttons">
-            <a href="#about" class="btn primary">
-                Explore Our School
-            </a>
-
-            <a href="#location" class="btn secondary">
-                View Location
-            </a>
+        <div class="hero-buttons">
+            <a href="#about" class="btn btn-primary">Explore School</a>
+            <a href="#admission" class="btn btn-outline">Admission Information</a>
         </div>
-
     </div>
-
 </section>
 
-
-<!-- STATS -->
-
-<div class="stats">
-    <div class="container stats-grid">
-
-        <div class="stat">
-            <div class="stat-icon">📚</div>
-            <h3>Learning</h3>
-            <p>FOCUS ON EDUCATION</p>
+<div class="quick-info">
+    <div class="container">
+        <div class="info-grid">
+            <div class="info-card">
+                <div class="icon">📅</div>
+                <h3>2006</h3>
+                <p>Established</p>
+            </div>
+            <div class="info-card">
+                <div class="icon">📚</div>
+                <h3>1–8</h3>
+                <p>Grades Taught</p>
+            </div>
+            <div class="info-card">
+                <div class="icon">💻</div>
+                <h3>4</h3>
+                <p>Computer Labs</p>
+            </div>
+            <div class="info-card">
+                <div class="icon">📖</div>
+                <h3>155+</h3>
+                <p>Students</p>
+            </div>
         </div>
-
-        <div class="stat">
-            <div class="stat-icon">🎓</div>
-            <h3>Growth</h3>
-            <p>STUDENT DEVELOPMENT</p>
-        </div>
-
-        <div class="stat">
-            <div class="stat-icon">🏆</div>
-            <h3>Excellence</h3>
-            <p>STRIVE TO ACHIEVE</p>
-        </div>
-
-        <div class="stat">
-            <div class="stat-icon">🌱</div>
-            <h3>Future</h3>
-            <p>BUILDING TOMORROW</p>
-        </div>
-
     </div>
 </div>
 
-
-<!-- ABOUT -->
-
-<section class="about" id="about">
-
-    <div class="container">
-
-        <div class="about-grid">
-
-            <div class="about-image">
-                <div>
-                    <div class="school-symbol">🏫</div>
-                    <h2>Our School</h2>
-                    <p>Knowledge • Character • Excellence</p>
-                </div>
-            </div>
-
-            <div class="about-content">
-
-                <small style="color:#087653;font-weight:bold;">
-                    ABOUT THE INSTITUTE
-                </small>
-
-                <h2>
-                    Education for a Better Future
-                </h2>
-
-                <p>
-                    Maulana Abul Kalam Azad Educational Institute
-                    is located in Bandzoo, Pulwama, Jammu and Kashmir.
-                </p>
-
-                <p>
-                    The school is committed to creating an environment
-                    where students can learn, develop their skills and
-                    prepare themselves for the future.
-                </p>
-
-                <div class="points">
-
-                    <div class="point">
-                        <span class="check">✓</span>
-                        Quality learning environment
-                    </div>
-
-                    <div class="point">
-                        <span class="check">✓</span>
-                        Focus on student development
-                    </div>
-
-                    <div class="point">
-                        <span class="check">✓</span>
-                        Encouragement of creativity
-                    </div>
-
-                    <div class="point">
-                        <span class="check">✓</span>
-                        Strong values and discipline
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- ACADEMICS -->
-
-<section id="academics">
-
-    <div class="container">
-
-        <div class="section-title">
-            <small>ACADEMICS</small>
-            <h2>Learning & Education</h2>
-            <p>
-                Helping students develop knowledge, confidence
-                and important skills for their future.
-            </p>
-        </div>
-
-        <div class="cards">
-
-            <div class="card">
-                <div class="card-icon">📖</div>
-                <h3>Classroom Learning</h3>
-                <p>
-                    A learning environment where students can
-                    understand concepts and build strong foundations.
-                </p>
-            </div>
-
-            <div class="card">
-                <div class="card-icon">🔬</div>
-                <h3>Science & Discovery</h3>
-                <p>
-                    Encouraging curiosity, observation and
-                    understanding of the world around us.
-                </p>
-            </div>
-
-            <div class="card">
-                <div class="card-icon">💻</div>
-                <h3>Digital Learning</h3>
-                <p>
-                    Encouraging students to develop useful
-                    technology and digital skills.
-                </p>
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- WHY SCHOOL -->
-
-<section class="why">
-
-    <div class="container">
-
-        <div class="section-title">
-            <small>OUR VALUES</small>
-            <h2>What We Encourage</h2>
-            <p>
-                Important qualities that help students grow
-                both academically and personally.
-            </p>
-        </div>
-
-        <div class="why-grid">
-
-            <div class="why-card">
-                <div class="big-icon">📚</div>
-                <h3>Knowledge</h3>
-                <p>Learning and understanding new ideas.</p>
-            </div>
-
-            <div class="why-card">
-                <div class="big-icon">🎯</div>
-                <h3>Discipline</h3>
-                <p>Developing responsibility and good habits.</p>
-            </div>
-
-            <div class="why-card">
-                <div class="big-icon">💡</div>
-                <h3>Creativity</h3>
-                <p>Thinking differently and solving problems.</p>
-            </div>
-
-            <div class="why-card">
-                <div class="big-icon">🤝</div>
-                <h3>Teamwork</h3>
-                <p>Learning cooperation and respect.</p>
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- FACILITIES -->
-
-<section class="facilities" id="facilities">
-
-    <div class="container">
-
-        <div class="section-title">
-
-            <small>FACILITIES</small>
-
-            <h2>School Environment</h2>
-
-            <p>
-                A supportive environment designed to encourage
-                learning and student development.
-            </p>
-
-        </div>
-
-        <div class="facility-grid">
-
-            <div class="facility">
-                <div class="facility-icon">🏫</div>
-                <h3>Learning Spaces</h3>
-                <p>
-                    Spaces dedicated to classroom learning
-                    and academic activities.
-                </p>
-            </div>
-
-            <div class="facility">
-                <div class="facility-icon">📚</div>
-                <h3>Study & Reading</h3>
-                <p>
-                    Encouraging students to read, explore
-                    and expand their knowledge.
-                </p>
-            </div>
-
-            <div class="facility">
-                <div class="facility-icon">⚽</div>
-                <h3>Sports & Activities</h3>
-                <p>
-                    Activities that encourage teamwork,
-                    fitness and participation.
-                </p>
-            </div>
-
-            <div class="facility">
-                <div class="facility-icon">💻</div>
-                <h3>Technology</h3>
-                <p>
-                    Promoting digital awareness and
-                    technology-based learning.
-                </p>
-            </div>
-
-            <div class="facility">
-                <div class="facility-icon">🎨</div>
-                <h3>Creative Activities</h3>
-                <p>
-                    Encouraging imagination and creative
-                    expression.
-                </p>
-            </div>
-
-            <div class="facility">
-                <div class="facility-icon">🌳</div>
-                <h3>Positive Environment</h3>
-                <p>
-                    A friendly atmosphere that supports
-                    learning and growth.
-                </p>
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- LOCATION -->
-
-<section class="contact" id="location">
-
-    <div class="container">
-
-        <div class="section-title">
-
-            <small>CONTACT & LOCATION</small>
-
-            <h2>Find Our School</h2>
-
-            <p>
-                Visit Maulana Abul Kalam Azad Educational Institute.
-            </p>
-
-        </div>
-
-        <div class="contact-grid">
-
-            <div class="contact-box">
-
-                <div class="contact-item">
-
-                    <div class="contact-icon">📍</div>
-
-                    <div>
-                        <h3>School Address</h3>
-                        <p>
-                            Bandzoo, Pulwama,<br>
-                            Jammu and Kashmir, India
-                        </p>
-                    </div>
-
-                </div>
-
-                <div class="contact-item">
-
-                    <div class="contact-icon">🏫</div>
-
-                   
+<script>
+function toggleMenu() {
+    const navLinks = id = document.getElementById('navLinks');
+    navLinks.classList.toggle('active');
+}
+</script>
+
+</body>
+    </html>
+    
