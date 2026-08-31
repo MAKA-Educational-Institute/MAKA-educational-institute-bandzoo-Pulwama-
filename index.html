@@ -1,4 +1,4 @@
-    <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -7,16 +7,19 @@
 <title>Maulana Abul Kalam Azad Educational Institute | Bandzoo, Pulwama</title>
 
 <meta name="description" content="Official school information website for Maulana Abul Kalam Azad Educational Institute, Bandzoo, Pulwama, Jammu and Kashmir.">
-<meta name="google-site-verification" content="8kEH2-_6SUyJ-p49ff-6d7sz82wEES78PdzuoeLKLbI" />
+
+<meta name="google-site-verification" content="8kEH2-_6SUyJ-p49ff-6d7sz82wEES78PdzuoeLKLbI">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
 <style>
+
 /* =========================
-   DESIGN SYSTEM & VARIABLES
+   VARIABLES
 ========================= */
+
 :root {
     --primary: #07644d;
     --primary-dark: #044334;
@@ -24,22 +27,28 @@
     --accent-yellow: #facc15;
     --accent-red: #dc2626;
     --accent-blue: #0284c7;
+
     --bg-light: #f8fafc;
     --surface: #ffffff;
+
     --text-main: #1e293b;
     --text-muted: #64748b;
+
     --border-color: #e2e8f0;
-    --shadow-sm: 0 2px 8px rgba(0,0,0,0.04);
+
+    --shadow-sm: 0 2px 8px rgba(0,0,0,0.05);
     --shadow-md: 0 10px 30px rgba(0,0,0,0.08);
     --shadow-lg: 0 20px 40px rgba(0,0,0,0.12);
+
     --radius-sm: 8px;
     --radius-md: 16px;
     --radius-lg: 24px;
 }
 
 /* =========================
-   GENERAL STYLES
+   GENERAL
 ========================= */
+
 * {
     margin: 0;
     padding: 0;
@@ -48,7 +57,7 @@
 }
 
 body {
-    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    font-family: 'Inter', system-ui, sans-serif;
     background: var(--bg-light);
     color: var(--text-main);
     line-height: 1.6;
@@ -58,6 +67,11 @@ body {
 a {
     text-decoration: none;
     color: inherit;
+}
+
+img {
+    max-width: 100%;
+    display: block;
 }
 
 section {
@@ -71,34 +85,33 @@ section {
 
 .section-title {
     text-align: center;
-    margin-bottom: 55px;
+    margin-bottom: 50px;
 }
 
 .section-title h2 {
     font-size: 38px;
-    font-weight: 800;
     color: var(--primary);
-    margin-bottom: 12px;
-    letter-spacing: -0.5px;
+    font-weight: 800;
+    margin-bottom: 10px;
 }
 
 .section-title p {
     color: var(--text-muted);
-    font-size: 16px;
-    font-weight: 500;
 }
 
 /* =========================
-   HEADER & NAVBAR
+   HEADER
 ========================= */
+
 header {
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 1000;
-    background: rgba(255, 255, 255, 0.92);
+
+    background: rgba(255,255,255,0.95);
     backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
+
     border-bottom: 1px solid rgba(0,0,0,0.05);
     box-shadow: var(--shadow-sm);
 }
@@ -106,8 +119,10 @@ header {
 .navbar {
     max-width: 1280px;
     margin: auto;
+
     min-height: 80px;
-    padding: 10px 25px;
+    padding: 8px 25px;
+
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -116,99 +131,98 @@ header {
 .logo-area {
     display: flex;
     align-items: center;
-    gap: 14px;
+    gap: 12px;
 }
 
 .school-logo-svg {
     width: 65px;
     height: 65px;
     filter: drop-shadow(0 4px 6px rgba(0,0,0,0.1));
-    transition: transform 0.3s ease;
-}
-
-.logo-area:hover .school-logo-svg {
-    transform: scale(1.05);
 }
 
 .school-name {
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 800;
     color: var(--primary-dark);
+
     max-width: 250px;
     line-height: 1.25;
+
     text-transform: uppercase;
-    letter-spacing: -0.2px;
 }
 
 .nav-links {
     display: flex;
     list-style: none;
-    gap: 22px;
+    gap: 10px;
 }
 
 .nav-links a {
     font-size: 14px;
     font-weight: 600;
-    color: var(--text-main);
-    transition: all 0.2s ease;
-    padding: 6px 10px;
-    border-radius: var(--radius-sm);
+
+    padding: 8px 10px;
+    border-radius: 8px;
+
+    transition: 0.25s;
 }
 
 .nav-links a:hover {
     color: var(--primary);
-    background: rgba(7, 100, 77, 0.06);
+    background: rgba(7,100,77,0.08);
 }
 
 .menu-btn {
     display: none;
-    font-size: 26px;
+    font-size: 28px;
     cursor: pointer;
     color: var(--primary);
 }
 
 /* =========================
-   HERO SECTION
+   HERO
 ========================= */
+
 .hero {
     min-height: 100vh;
     padding-top: 140px;
+
     display: flex;
     align-items: center;
-    background: 
-        radial-gradient(circle at top right, rgba(56, 189, 248, 0.25), transparent 40%),
-        radial-gradient(circle at bottom left, rgba(16, 163, 127, 0.2), transparent 40%),
-        linear-gradient(135deg, #044334 0%, #07644d 60%, #0284c7 100%);
+
     color: white;
-    position: relative;
+    text-align: center;
+
+    background:
+        radial-gradient(circle at top right, rgba(56,189,248,0.3), transparent 40%),
+        radial-gradient(circle at bottom left, rgba(16,163,127,0.25), transparent 40%),
+        linear-gradient(135deg,#044334 0%,#07644d 60%,#0284c7 100%);
 }
 
 .hero-content {
     max-width: 900px;
     margin: auto;
-    text-align: center;
 }
 
 .hero-badge {
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    background: rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(8px);
-    border: 1px solid rgba(255, 255, 255, 0.25);
+
+    background: rgba(255,255,255,0.15);
+    border: 1px solid rgba(255,255,255,0.25);
+
     padding: 8px 20px;
     border-radius: 50px;
+
     margin-bottom: 24px;
-    font-size: 14px;
-    font-weight: 500;
 }
 
 .hero h1 {
     font-size: 54px;
-    font-weight: 800;
     line-height: 1.1;
+    font-weight: 800;
     margin-bottom: 20px;
-    letter-spacing: -1px;
 }
 
 .hero h1 span {
@@ -218,23 +232,20 @@ header {
 .hero-location {
     font-size: 20px;
     font-weight: 600;
-    opacity: 0.95;
-    margin-bottom: 12px;
-    color: #e2e8f0;
+    margin-bottom: 15px;
 }
 
-.hero p.tagline {
+.hero p {
     font-size: 18px;
     max-width: 700px;
-    margin: 0 auto 36px;
-    opacity: 0.85;
-    font-weight: 300;
+    margin: auto auto 35px;
+    opacity: 0.9;
 }
 
 .hero-buttons {
     display: flex;
     justify-content: center;
-    gap: 16px;
+    gap: 15px;
     flex-wrap: wrap;
 }
 
@@ -242,14 +253,14 @@ header {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    padding: 14px 32px;
+
+    padding: 14px 30px;
+
     border-radius: 50px;
+
     font-weight: 700;
-    font-size: 15px;
-    border: none;
-    cursor: pointer;
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    box-shadow: var(--shadow-sm);
+
+    transition: 0.3s;
 }
 
 .btn-primary {
@@ -259,85 +270,445 @@ header {
 
 .btn-primary:hover {
     transform: translateY(-3px);
-    box-shadow: 0 10px 20px rgba(250, 204, 21, 0.3);
 }
 
 .btn-outline {
-    border: 2px solid rgba(255, 255, 255, 0.8);
+    border: 2px solid white;
     color: white;
-    background: transparent;
 }
 
 .btn-outline:hover {
     background: white;
     color: var(--primary);
-    transform: translateY(-3px);
 }
 
 /* =========================
-   QUICK INFO CARDS
+   QUICK INFO
 ========================= */
+
 .quick-info {
     margin-top: -60px;
     position: relative;
-    z-index: 10;
+    z-index: 5;
 }
 
 .info-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4,1fr);
     gap: 20px;
 }
 
 .info-card {
-    background: var(--surface);
-    padding: 30px 20px;
+    background: white;
+    padding: 28px 20px;
     text-align: center;
+
     border-radius: var(--radius-md);
+
     box-shadow: var(--shadow-md);
-    border: 1px solid rgba(0,0,0,0.03);
-    transition: transform 0.3s ease;
+
+    transition: 0.3s;
 }
 
 .info-card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-6px);
 }
 
 .info-card .icon {
     font-size: 32px;
-    margin-bottom: 12px;
+    margin-bottom: 10px;
 }
 
 .info-card h3 {
     color: var(--primary);
-    font-size: 32px;
-    font-weight: 800;
-    margin-bottom: 4px;
+    font-size: 30px;
 }
 
 .info-card p {
-    font-size: 14px;
     color: var(--text-muted);
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
+    font-size: 13px;
+    font-weight: 700;
 }
 
 /* =========================
-   RESPONSIVE DESIGN
+   ABOUT
 ========================= */
-@media (max-width: 900px) {
+
+.about {
+    background: white;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.about-text h3 {
+    color: var(--primary);
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.about-text p {
+    color: var(--text-muted);
+    margin-bottom: 15px;
+}
+
+.about-box {
+    background: linear-gradient(135deg,#07644d,#0284c7);
+    color: white;
+
+    padding: 40px;
+    border-radius: var(--radius-lg);
+
+    box-shadow: var(--shadow-lg);
+}
+
+.about-box h3 {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+/* =========================
+   ACADEMICS
+========================= */
+
+.academics {
+    background: var(--bg-light);
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 25px;
+}
+
+.card {
+    background: white;
+    padding: 30px;
+
+    border-radius: var(--radius-md);
+
+    box-shadow: var(--shadow-sm);
+
+    border: 1px solid var(--border-color);
+
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-md);
+}
+
+.card-icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    color: var(--primary);
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: var(--text-muted);
+}
+
+/* =========================
+   STAFF
+========================= */
+
+.staff {
+    background: white;
+}
+
+.staff-card {
+    text-align: center;
+}
+
+.staff-photo {
+    width: 110px;
+    height: 110px;
+
+    margin: auto auto 15px;
+
+    border-radius: 50%;
+
+    background: linear-gradient(135deg,#07644d,#0284c7);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+    font-size: 42px;
+}
+
+/* =========================
+   ACHIEVEMENTS
+========================= */
+
+.achievements {
+    background: var(--bg-light);
+}
+
+.achievement-number {
+    font-size: 42px;
+    font-weight: 900;
+    color: var(--accent-blue);
+}
+
+/* =========================
+   FACILITIES
+========================= */
+
+.facilities {
+    background: white;
+}
+
+/* =========================
+   GALLERY
+========================= */
+
+.gallery {
+    background: var(--bg-light);
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+
+.gallery-item {
+    height: 220px;
+
+    border-radius: var(--radius-md);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+    font-size: 20px;
+    font-weight: 800;
+
+    background:
+        linear-gradient(rgba(4,67,52,0.65),rgba(2,132,199,0.65)),
+        linear-gradient(135deg,#07644d,#0284c7);
+
+    box-shadow: var(--shadow-md);
+
+    transition: 0.3s;
+}
+
+.gallery-item:hover {
+    transform: scale(1.02);
+}
+
+/* =========================
+   ADMISSION
+========================= */
+
+.admission {
+    background: linear-gradient(135deg,#044334,#07644d);
+    color: white;
+}
+
+.admission .section-title h2 {
+    color: var(--accent-yellow);
+}
+
+.admission .section-title p {
+    color: #dbeafe;
+}
+
+.admission-box {
+    max-width: 800px;
+    margin: auto;
+
+    background: rgba(255,255,255,0.1);
+
+    padding: 40px;
+
+    border-radius: var(--radius-lg);
+
+    border: 1px solid rgba(255,255,255,0.2);
+}
+
+.admission-box ul {
+    margin: 20px 0 25px;
+    padding-left: 20px;
+}
+
+.admission-box li {
+    margin-bottom: 10px;
+}
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact {
+    background: white;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.contact-card {
+    background: var(--bg-light);
+    padding: 30px;
+
+    border-radius: var(--radius-md);
+
+    border: 1px solid var(--border-color);
+}
+
+.contact-card h3 {
+    color: var(--primary);
+    margin-bottom: 15px;
+}
+
+.contact-item {
+    margin-bottom: 15px;
+}
+
+.contact-item strong {
+    color: var(--text-main);
+}
+
+.map-box {
+    min-height: 300px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    border-radius: var(--radius-md);
+
+    background:
+        linear-gradient(135deg,#07644d,#0284c7);
+
+    color: white;
+
+    padding: 30px;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background: #022c22;
+    color: white;
+
+    padding: 50px 7% 25px;
+}
+
+.footer-grid {
+    max-width: 1200px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 40px;
+}
+
+footer h3 {
+    color: var(--accent-yellow);
+    margin-bottom: 15px;
+}
+
+footer p,
+footer li {
+    color: #cbd5e1;
+    font-size: 14px;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer li {
+    margin-bottom: 8px;
+}
+
+.footer-bottom {
+    max-width: 1200px;
+    margin: 35px auto 0;
+
+    padding-top: 20px;
+
+    border-top: 1px solid rgba(255,255,255,0.15);
+
+    text-align: center;
+
+    color: #94a3b8;
+    font-size: 13px;
+}
+
+/* =========================
+   BACK TO TOP
+========================= */
+
+#topBtn {
+    position: fixed;
+
+    right: 20px;
+    bottom: 20px;
+
+    width: 48px;
+    height: 48px;
+
+    border: none;
+    border-radius: 50%;
+
+    background: var(--accent-yellow);
+
+    color: #1e293b;
+
+    font-size: 22px;
+    font-weight: 900;
+
+    cursor: pointer;
+
+    display: none;
+
+    z-index: 999;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width:900px) {
+
     .nav-links {
         position: absolute;
+
         top: 80px;
         left: 0;
+
         width: 100%;
-        background: var(--surface);
+
+        background: white;
+
         display: none;
+
         flex-direction: column;
-        padding: 24px;
+
+        padding: 20px;
+
         box-shadow: var(--shadow-md);
-        border-bottom: 1px solid var(--border-color);
     }
 
     .nav-links.active {
@@ -349,13 +720,45 @@ header {
     }
 
     .info-grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .about-grid,
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .card-grid {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
     }
 }
 
-@media (max-width: 600px) {
+@media(max-width:600px) {
+
     section {
-        padding: 60px 5%;
+        padding: 65px 5%;
+    }
+
+    .navbar {
+        padding: 8px 15px;
+    }
+
+    .school-logo-svg {
+        width: 55px;
+        height: 55px;
+    }
+
+    .school-name {
+        font-size: 11px;
+        max-width: 160px;
     }
 
     .hero {
@@ -363,175 +766,570 @@ header {
     }
 
     .hero h1 {
-        font-size: 36px;
+        font-size: 35px;
     }
 
-    .hero p.tagline {
-        font-size: 16px;
+    .hero-location {
+        font-size: 17px;
     }
 
-    .section-title h2 {
-        font-size: 30px;
+    .hero p {
+        font-size: 15px;
     }
 
     .info-grid {
         grid-template-columns: 1fr;
     }
 
-    .school-name {
-        font-size: 13px;
-        max-width: 180px;
+    .card-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .section-title h2 {
+        font-size: 30px;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
     }
 }
+
 </style>
 </head>
 
 <body>
 
+<!-- =========================
+     HEADER
+========================= -->
+
 <header>
-    <nav class="navbar">
-        <div class="logo-area">
-            <!-- UPDATED EXACT SVG LOGO MATCHING IMAGE -->
-            <svg class="school-logo-svg" viewBox="0 0 400 450" xmlns="http://www.w3.org/2000/svg">
-                <!-- Outer Yellow Background Card -->
-                <rect x="0" y="0" width="400" height="450" rx="40" fill="#facc15" />
-                
-                <!-- Circular Double Red Border -->
-                <circle cx="200" cy="200" r="145" fill="none" stroke="#dc2626" stroke-width="6"/>
-                <circle cx="200" cy="200" r="137" fill="none" stroke="#dc2626" stroke-width="2"/>
-                
-                <!-- Curved Header Text -->
-                <path id="arcText" d="M 40,200 A 160,160 0 1,1 360,200" fill="none"/>
-                <text font-family="'Inter', sans-serif" font-weight="900" font-size="25" fill="#111827" letter-spacing="1">
-                    <textPath href="#arcText" startOffset="50%" text-anchor="middle">
-                        MAULANA ABUL KALAM AZAD EDU. INST.
-                    </textPath>
-                </text>
-                
-                <!-- Inner Blue Shield -->
-                <path d="M 140 145 C 140 145, 200 135, 260 145 C 260 145, 275 240, 200 270 C 125 240, 140 145, 140 145 Z" fill="#7dd3fc"/>
-                
-                <!-- Graduation Cap (Mortarboard) -->
-                <polygon points="200,115 255,135 200,150 145,135" fill="#1e293b"/>
-                <path d="M 165,142 L 165,158 L 235,158 L 235,142 Z" fill="#1e293b"/>
-                <path d="M 152 137 L 150 170" stroke="#1e293b" stroke-width="2.5"/>
-                <circle cx="150" cy="172" r="3" fill="#1e293b"/>
-                
-                <!-- Abstract Human Figures Inside Shield -->
-                <g fill="#111827">
-                    <!-- Left Figure -->
-                    <circle cx="170" cy="168" r="9"/>
-                    <path d="M 152 230 C 152 190, 185 180, 185 230 Z"/>
-                    <!-- Right Figure -->
-                    <circle cx="230" cy="168" r="9"/>
-                    <path d="M 215 230 C 215 180, 248 190, 248 230 Z"/>
-                </g>
-                
-                <!-- Sunburst Rays behind MAKA Text -->
-                <g stroke="#64748b" stroke-width="4" stroke-linecap="round">
-                    <line x1="120" y1="240" x2="160" y2="255" />
-                    <line x1="110" y1="258" x2="155" y2="268" />
-                    <line x1="105" y1="275" x2="150" y2="280" stroke-width="5"/>
-                    <line x1="280" y1="240" x2="240" y2="255" />
-                    <line x1="290" y1="258" x2="245" y2="268" />
-                    <line x1="295" y1="275" x2="250" y2="280" stroke-width="5"/>
-                </g>
 
-                <!-- MAKA Text -->
-                <text x="200" y="312" font-family="'Inter', sans-serif" font-weight="900" font-size="44" fill="#52606d" text-anchor="middle" letter-spacing="4">MAKA</text>
-                
-                <!-- Vertical Bar Lines Below MAKA -->
-                <g fill="#52606d">
-                    <rect x="170" y="322" width="4" height="20" rx="2"/>
-                    <rect x="180" y="322" width="4" height="28" rx="2"/>
-                    <rect x="190" y="322" width="4" height="20" rx="2"/>
-                    <rect x="200" y="322" width="4" height="34" rx="2"/>
-                    <rect x="210" y="322" width="4" height="20" rx="2"/>
-                    <rect x="220" y="322" width="4" height="28" rx="2"/>
-                    <rect x="230" y="322" width="4" height="20" rx="2"/>
-                </g>
+<nav class="navbar">
 
-                <!-- Bottom Text BANDZOO PUL -->
-                <text x="200" y="420" font-family="'Inter', sans-serif" font-weight="900" font-size="36" fill="#111827" text-anchor="middle" letter-spacing="1">
-                    BANDZOO PUL
-                </text>
-            </svg>
-            
-            <div class="school-name">
-                Maulana Abul Kalam Azad Educational Institute
-            </div>
-        </div>
+<div class="logo-area">
 
-        <div class="menu-btn" onclick="toggleMenu()">☰</div>
+<svg class="school-logo-svg"
+viewBox="0 0 400 450"
+xmlns="http://www.w3.org/2000/svg">
 
-        <ul class="nav-links" id="navLinks">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#academics">Academics</a></li>
-            <li><a href="#teachers">Staff</a></li>
-            <li><a href="#achievements">Achievements</a></li>
-            <li><a href="#facilities">Facilities</a></li>
-            <li><a href="#gallery">Gallery</a></li>
-            <li><a href="#admission">Admission</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-</header>
+<rect x="0" y="0"
+width="400"
+height="450"
+rx="40"
+fill="#facc15"/>
 
-<section class="hero" id="home">
-    <div class="hero-content">
-        <div class="hero-badge">
-            <span>🎓</span> Welcome to Our Campus
-        </div>
-        <h1>
-            Maulana Abul Kalam Azad<br>
-            <span>Educational Institute</span>
-        </h1>
-        <div class="hero-location">Bandzoo, Pulwama, Jammu & Kashmir</div>
-        <p class="tagline">
-            Nurturing young minds through holistic education, foundational values, discipline, and modern knowledge.
-        </p>
-        <div class="hero-buttons">
-            <a href="#about" class="btn btn-primary">Explore School</a>
-            <a href="#admission" class="btn btn-outline">Admission Information</a>
-        </div>
-    </div>
-</section>
+<circle cx="200" cy="200" r="145"
+fill="none"
+stroke="#dc2626"
+stroke-width="6"/>
 
-<div class="quick-info">
-    <div class="container">
-        <div class="info-grid">
-            <div class="info-card">
-                <div class="icon">📅</div>
-                <h3>2006</h3>
-                <p>Established</p>
-            </div>
-            <div class="info-card">
-                <div class="icon">📚</div>
-                <h3>1–8</h3>
-                <p>Grades Taught</p>
-            </div>
-            <div class="info-card">
-                <div class="icon">💻</div>
-                <h3>4</h3>
-                <p>Computer Labs</p>
-            </div>
-            <div class="info-card">
-                <div class="icon">📖</div>
-                <h3>155+</h3>
-                <p>Students</p>
-            </div>
-        </div>
-    </div>
+<circle cx="200" cy="200" r="137"
+fill="none"
+stroke="#dc2626"
+stroke-width="2"/>
+
+<path id="arcText"
+d="M 40,200 A 160,160 0 1,1 360,200"
+fill="none"/>
+
+<text font-family="Arial"
+font-weight="900"
+font-size="25"
+fill="#111827"
+letter-spacing="1">
+
+<textPath href="#arcText"
+startOffset="50%"
+text-anchor="middle">
+
+MAULANA ABUL KALAM AZAD EDU. INST.
+
+</textPath>
+
+</text>
+
+<path d="M 140 145
+C 140 145, 200 135, 260 145
+C 260 145, 275 240, 200 270
+C 125 240, 140 145, 140 145 Z"
+fill="#7dd3fc"/>
+
+<polygon points="200,115 255,135 200,150 145,135"
+fill="#1e293b"/>
+
+<path d="M 165 142 L 165 158 L 235 158 L 235 142 Z"
+fill="#1e293b"/>
+
+<circle cx="170" cy="168" r="9"
+fill="#111827"/>
+
+<circle cx="230" cy="168" r="9"
+fill="#111827"/>
+
+<path d="M152 230 C152 190,185 180,185 230Z"
+fill="#111827"/>
+
+<path d="M215 230 C215 180,248 190,248 230Z"
+fill="#111827"/>
+
+<g stroke="#64748b"
+stroke-width="4"
+stroke-linecap="round">
+
+<line x1="120" y1="240" x2="160" y2="255"/>
+<line x1="110" y1="258" x2="155" y2="268"/>
+<line x1="105" y1="275" x2="150" y2="280"/>
+
+<line x1="280" y1="240" x2="240" y2="255"/>
+<line x1="290" y1="258" x2="245" y2="268"/>
+<line x1="295" y1="275" x2="250" y2="280"/>
+
+</g>
+
+<text x="200"
+y="312"
+font-family="Arial"
+font-weight="900"
+font-size="44"
+fill="#52606d"
+text-anchor="middle"
+letter-spacing="4">
+
+MAKA
+
+</text>
+
+<text x="200"
+y="420"
+font-family="Arial"
+font-weight="900"
+font-size="36"
+fill="#111827"
+text-anchor="middle">
+
+BANDZOO PUL
+
+</text>
+
+</svg>
+
+<div class="school-name">
+Maulana Abul Kalam Azad Educational Institute
 </div>
 
-<script>
-function toggleMenu() {
-    const navLinks = id = document.getElementById('navLinks');
-    navLinks.classList.toggle('active');
-}
-</script>
+</div>
 
-</body>
-                      </html>
+<div class="menu-btn"
+onclick="toggleMenu()">
+☰
+</div>
 
+<ul class="nav-links" id="navLinks">
+
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#academics">Academics</a></li>
+<li><a href="#teachers">Staff</a></li>
+<li><a href="#achievements">Achievements</a></li>
+<li><a href="#facilities">Facilities</a></li>
+<li><a href="#gallery">Gallery</a></li>
+<li><a href="#admission">Admission</a></li>
+<li><a href="#contact">Contact</a></li>
+
+</ul>
+
+</nav>
+
+</header>
+
+
+<!-- =========================
+     HOME
+========================= -->
+
+<section class="hero" id="home">
+
+<div class="hero-content">
+
+<div class="hero-badge">
+🎓 Welcome to Our Campus
+</div>
+
+<h1>
+Maulana Abul Kalam Azad<br>
+<span>Educational Institute</span>
+</h1>
+
+<div class="hero-location">
+📍 Bandzoo, Pulwama, Jammu & Kashmir
+</div>
+
+<p>
+Nurturing young minds through holistic education,
+foundational values, discipline, and modern knowledge.
+</p>
+
+<div class="hero-buttons">
+
+<a href="#about"
+class="btn btn-primary">
+Explore School
+</a>
+
+<a href="#admission"
+class="btn btn-outline">
+Admission Information
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     QUICK INFORMATION
+========================= -->
+
+<div class="quick-info">
+
+<div class="container">
+
+<div class="info-grid">
+
+<div class="info-card">
+
+<div class="icon">📅</div>
+
+<h3>2006</h3>
+
+<p>Established</p>
+
+</div>
+
+
+<div class="info-card">
+
+<div class="icon">📚</div>
+
+<h3>1–8</h3>
+
+<p>Grades Taught</p>
+
+</div>
+
+
+<div class="info-card">
+
+<div class="icon">💻</div>
+
+<h3>4</h3>
+
+<p>Computer Labs</p>
+
+</div>
+
+
+<div class="info-card">
+
+<div class="icon">📖</div>
+
+<h3>155+</h3>
+
+<p>Students</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- =========================
+     ABOUT
+========================= -->
+
+<section class="about" id="about">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>About Our School</h2>
+
+<p>Learn more about our institution</p>
+
+</div>
+
+
+<div class="about-grid">
+
+<div class="about-text">
+
+<h3>Maulana Abul Kalam Azad Educational Institute</h3>
+
+<p>
+Maulana Abul Kalam Azad Educational Institute is an
+educational institution located at Bandzoo, Pulwama,
+Jammu and Kashmir.
+</p>
+
+<p>
+The school focuses on providing students with quality
+education while encouraging discipline, knowledge,
+confidence, creativity and good values.
+</p>
+
+<p>
+Our aim is to provide a supportive learning environment
+where students can develop academically and personally.
+</p>
+
+</div>
+
+
+<div class="about-box">
+
+<h3>Our Mission</h3>
+
+<p>
+To provide meaningful education and help students
+develop the knowledge, skills and values required
+to become responsible and capable members of society.
+</p>
+
+<br>
+
+<h3>Our Vision</h3>
+
+<p>
+To create a positive and inspiring educational
+environment where every student gets opportunities
+to learn, grow and succeed.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     ACADEMICS
+========================= -->
+
+<section class="academics" id="academics">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>Academics</h2>
+
+<p>Building strong foundations for future learning</p>
+
+</div>
+
+
+<div class="card-grid">
+
+
+<div class="card">
+
+<div class="card-icon">📘</div>
+
+<h3>Primary Education</h3>
+
+<p>
+Strong foundations in language, mathematics,
+science and general knowledge.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="card-icon">🔬</div>
+
+<h3>Science Learning</h3>
+
+<p>
+Encouraging curiosity and understanding through
+science-based learning.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="card-icon">💻</div>
+
+<h3>Computer Education</h3>
+
+<p>
+Introducing students to computers and modern
+digital learning.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="card-icon">📖</div>
+
+<h3>Languages</h3>
+
+<p>
+Developing communication, reading and writing skills.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="card-icon">➗</div>
+
+<h3>Mathematics</h3>
+
+<p>
+Developing logical thinking and problem-solving abilities.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="card-icon">🌍</div>
+
+<h3>General Studies</h3>
+
+<p>
+Helping students understand society, environment
+and the world around them.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     STAFF
+========================= -->
+
+<section class="staff" id="teachers">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>Our Staff</h2>
+
+<p>Dedicated educators supporting student development</p>
+
+</div>
+
+
+<div class="card-grid">
+
+<div class="card staff-card">
+
+<div class="staff-photo">
+👨‍🏫
+</div>
+
+<h3>Teaching Staff</h3>
+
+<p>
+Our teachers guide students in their academic
+and personal development.
+</p>
+
+</div>
+
+
+<div class="card staff-card">
+
+<div class="staff-photo">
+👩‍🏫
+</div>
+
+<h3>Academic Support</h3>
+
+<p>
+Staff members work together to create a positive
+learning environment.
+</p>
+
+</div>
+
+
+<div class="card staff-card">
+
+<div class="staff-photo">
+🏫
+</div>
+
+<h3>School Administration</h3>
+
+<p>
+Supporting the smooth functioning of the school
+and its educational activities.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     ACHIEVEMENTS
+========================= -->
+
+<section class="achievements" id="achievements">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>Achievements</h2>
+
+<p>Celebrating learning and student participation</p>
+
+</div>
+
+
+<div class="card-grid">
+
+<div class="card">
+
+<div class="achievement-number">2006</div>
+
+<h3>Established</h3>
+
+<p>
+The institution has been serving 
